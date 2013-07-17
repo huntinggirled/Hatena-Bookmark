@@ -80,7 +80,7 @@
       loadTen();
   } else {
       loadBookmark();
-      checkComment();
+      //checkComment();
   }
 
 })();
