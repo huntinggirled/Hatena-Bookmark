@@ -66,11 +66,12 @@
   };
 
     var checkComment = function() {
-      var iframe = document.getElementById( 'hatena-bookmark-bookmarklet-iframe' );
+      var iframe = document.getElementById('hatena-bookmark-bookmarklet-iframe');
       if(iframe) {
         iframe.onload = function() {
+          var body = iframe.contentWindow.document.getElementById( 'comment' ).body.innerHTML;
           var comment = iframe.contentWindow.document.getElementById( 'comment' );
-          alert('aaaa'+comment);
+          alert('aaaa'+comment+body);
           comment.onkeypress = function(e) {
             alert(e.keyCode);
           }
