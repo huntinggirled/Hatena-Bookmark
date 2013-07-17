@@ -72,9 +72,7 @@
           alert(this);
           alert(this.contentWindow);
           alert(this.contentWindow.document);
-          var contentDocument = this.contentDocument || this.contentWindow.document;
-          alert(contentDocument);
-          alert(contentDocument.body);
+          alert(this.contentDocument);
 
         };
       //  iframe.onload = function() {
