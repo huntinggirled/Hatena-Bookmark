@@ -1,5 +1,5 @@
 (function() {
-  $("input[type=text]").keypress(function(ev) {
+  jQuery("input[type=text]").keypress(function(ev) {
     if ((ev.which && ev.which === 13) ||
         (ev.keyCode && ev.keyCode === 13)) {
       alert('13');
