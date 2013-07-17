@@ -68,14 +68,17 @@
     var checkComment = function() {
       var iframe = document.getElementById('hatena-bookmark-bookmarklet-iframe');
       if(iframe) {
-        iframe.onload = function() {
-          alert('aaaa'+this.contentWindow.document.getElementById( 'comment' ));
-          var comment = iframe.contentWindow.document.getElementById( 'comment' );
-          alert('aaaa'+comment);
-          comment.onkeypress = function(e) {
-            alert(e.keyCode);
-          }
+        iframe.onkeypress = function(e) {
+          alert(e.keyCode);
         };
+      //  iframe.onload = function() {
+      //    alert('aaaa'+this.contentWindow.document.getElementById( 'comment' ));
+      //    var comment = iframe.contentWindow.document.getElementById( 'comment' );
+      //    alert('aaaa'+comment);
+      //    comment.onkeypress = function(e) {
+      //      alert(e.keyCode);
+      //    }
+      //  };
       } else {
         setTimeout(checkComment, 20);
       }
