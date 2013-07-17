@@ -66,8 +66,9 @@
   };
   
   var checkComment = function() {
-    if (typeof Ten.IFrameMessenger) {
-      alert(document.getElementById('comment'));
+    alert('111');
+    if (window.document.getElementById('comment')) {
+      alert(window.document.getElementById('comment'));
     } else {
       setTimeout(checkComment, 20);
     }
