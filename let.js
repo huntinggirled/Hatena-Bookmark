@@ -66,7 +66,7 @@
   };
 
   var checkComment = function() {
-    var iframe = document.getElementById( 'iframe' );
+    var iframe = document.getElementById( 'comment' );
     iframe.onload = function()
     {
               alert( '完了' );
