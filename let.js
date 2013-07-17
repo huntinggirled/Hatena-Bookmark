@@ -62,7 +62,6 @@
       } else {
           setTimeout(loadBookmark, 20);
       }
-      loadScript('https://raw.github.com/huntinggirled/Hatena-Bookmark/master/control.js');
   };
   
   if (typeof Ten == 'undefined') {
