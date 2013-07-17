@@ -71,7 +71,7 @@
       window.Hatena.Bookmark.BookmarkLet &&
       window.Hatena.Bookmark.BookmarkLet.base &&
       window.Hatena.Bookmark.BookmarkLet.instance) {
-      alert(document.getElementsById('comment'));
+      alert(document.getElementById('comment'));
     } else {
       setTimeout(checkComment, 20);
     }
