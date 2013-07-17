@@ -9,7 +9,7 @@
     }
   });
 
-jQuery("#comment").focus(function() {
+jQuery('textarea#comment').focus(function() {
   alert('aaa');
 });
 
