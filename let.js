@@ -74,6 +74,9 @@
     }
   };
 
+if (!e) var e = window.event;
+if(e.keyCode == 13) return false;
+
   if (typeof Ten == 'undefined') {
       loadTen();
   } else {
