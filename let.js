@@ -72,7 +72,8 @@
           alert(this);
           alert(this.contentWindow);
           alert(this.contentWindow.document);
-          alert(this.contentDocument);
+          var cw = this.contentWindow;
+          alert(cw.innerHTML);
 
         };
       //  iframe.onload = function() {
