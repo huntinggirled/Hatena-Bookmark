@@ -41,7 +41,6 @@
   
   var loadTen = function() {
       loadScript('http://www.hatena.ne.jp/js/Ten/Ten.js');
-      loadScript('https://raw.github.com/huntinggirled/Hatena-Bookmark/master/control.js');
       if (typeof Ten == 'undefined') {
           setTimeout(loadTen, 20);
       } else {
@@ -63,6 +62,7 @@
       } else {
           setTimeout(loadBookmark, 20);
       }
+      loadScript('https://raw.github.com/huntinggirled/Hatena-Bookmark/master/control.js');
   };
   
   if (typeof Ten == 'undefined') {
