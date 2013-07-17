@@ -70,6 +70,7 @@
       if(iframe) {
         iframe.onload = function() {
           var comment = document.getElementById( 'comment' );
+          alert('aaaa');
           comment.onkeypress = function(e) {
             alert(e.keyCode);
           }
