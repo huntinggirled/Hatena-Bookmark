@@ -65,11 +65,16 @@
       }
   };
 
-  var checkComment = function() {
     var iframe = document.getElementById( 'hatena-bookmark-bookmarklet-iframe' );
     iframe.onload = function()
     {
-              alert(document.getElementById( 'comment' ));
+      alert('onload');
+    }
+
+  var checkComment = function() {
+    var iframe = document.getElementById( 'hatena-bookmark-bookmarklet-iframe' );
+    if(iframe) {
+      alert('iframe');
     } else {
       setTimeout(checkComment, 20);
     }
