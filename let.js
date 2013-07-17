@@ -69,11 +69,7 @@
     var iframe = document.getElementById( 'hatena-bookmark-bookmarklet-iframe' );
     iframe.onload = function()
     {
-              alert( '完了' );
-    }
-    var contentDocument = IFrame.contentDocument || IFrame.contentWindow.document;
-    if (contentDocument) {
-      alert(contentDocument);
+              alert(document.getElementById( 'comment' ));
     } else {
       setTimeout(checkComment, 20);
     }
