@@ -59,31 +59,21 @@
       {
           window.Hatena.Bookmark.BookmarkLet.baseURL = baseURL;
           new Hatena.Bookmark.BookmarkLet;
-          // checkComment();
+          checkComment();
       } else {
           setTimeout(loadBookmark, 20);
       }
   };
-  
+
   var checkComment = function() {
-    alert('111');
-    if (window.document.getElementById('comment')) {
-      alert(window.document.getElementById('comment'));
+    var contentDocument = IFrame.contentDocument || IFrame.contentWindow.document;
+    if (contentDocument) {
+      alert(contentDocument);
     } else {
       setTimeout(checkComment, 20);
     }
   };
-
-document.onkeydown = function (e){
-
-  // InternetExplorer 用
-  if (!e) e = window.event;
-
-  // 出力テスト
-  console.log(e);
-  alert('aaa');
-};
-
+  
   if (typeof Ten == 'undefined') {
       loadTen();
   } else {
