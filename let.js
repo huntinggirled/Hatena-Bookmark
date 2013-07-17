@@ -66,8 +66,7 @@
   };
   
   var checkComment = function() {
-    alert('aaa');
-    if (document.getElementById('comment')) {
+    if (typeof Ten.IFrameMessenger) {
       alert(document.getElementById('comment'));
     } else {
       setTimeout(checkComment, 20);
