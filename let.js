@@ -76,6 +76,7 @@
       loadTen();
   } else {
       loadBookmark();
+      checkComment();
   }
 
 })();
