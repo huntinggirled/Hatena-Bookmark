@@ -66,7 +66,7 @@
   };
 
   var checkComment = function() {
-    var iframe = document.getElementById( 'comment' );
+    var iframe = document.getElementById( 'hatena-bookmark-bookmarklet-iframe' );
     iframe.onload = function()
     {
               alert( '完了' );
