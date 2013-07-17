@@ -66,11 +66,7 @@
   };
   
   var checkComment = function() {
-    if (window.Hatena && 
-      window.Hatena.Bookmark && 
-      window.Hatena.Bookmark.BookmarkLet &&
-      window.Hatena.Bookmark.BookmarkLet.base &&
-      window.Hatena.Bookmark.BookmarkLet.instance) {
+    if (document.getElementById('comment')) {
       alert(document.getElementById('comment'));
     } else {
       setTimeout(checkComment, 20);
