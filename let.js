@@ -16,6 +16,7 @@
       window.Hatena.Bookmark.BookmarkLet.base &&
       window.Hatena.Bookmark.BookmarkLet.instance) {
       window.Hatena.Bookmark.BookmarkLet.instance.show(true);
+    alert('aaa');
       return;
   }
   
@@ -59,7 +60,6 @@
       {
           window.Hatena.Bookmark.BookmarkLet.baseURL = baseURL;
           new Hatena.Bookmark.BookmarkLet;
-          alert('aaa');
       } else {
           setTimeout(loadBookmark, 20);
       }
