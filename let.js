@@ -13,6 +13,8 @@ jQuery('textarea#comment').focus(function() {
   alert('aaa');
 });
 
+alert('asf');
+
 
   var baseURL = 'http://b.hatena.ne.jp';
 
