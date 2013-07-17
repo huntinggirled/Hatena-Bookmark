@@ -69,16 +69,16 @@
     iframe.onload = function()
     {
       alert('onload');
-    }
+    };
 
-  var checkComment = function() {
-    var iframe = document.getElementById( 'hatena-bookmark-bookmarklet-iframe' );
-    if(iframe) {
-      alert('iframe');
-    } else {
-      setTimeout(checkComment, 20);
-    }
-  };
+    var checkComment = function() {
+      var iframe = document.getElementById( 'hatena-bookmark-bookmarklet-iframe' );
+      if(iframe) {
+        alert('iframe');
+      } else {
+        setTimeout(checkComment, 20);
+      }
+    };
   
   if (typeof Ten == 'undefined') {
       loadTen();
