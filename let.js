@@ -69,9 +69,8 @@
       var iframe = document.getElementById('hatena-bookmark-bookmarklet-iframe');
       if(iframe) {
         iframe.onload = function() {
-          this.onkeypress = function(e){
-          alert(e.keyCode);
-          };
+          var value = document.getElementById('hatena-bookmark-bookmarklet-iframe').contentWindow.document.getElementById("nakanohito").value
+          alert(value);
         };
       //  iframe.onload = function() {
       //    alert('aaaa'+this.contentWindow.document.getElementById( 'comment' ));
