@@ -16,7 +16,6 @@
       window.Hatena.Bookmark.BookmarkLet.base &&
       window.Hatena.Bookmark.BookmarkLet.instance) {
       window.Hatena.Bookmark.BookmarkLet.instance.show(true);
-    alert('aaa');
       return;
   }
   
@@ -65,6 +64,14 @@
       }
   };
   
+  var checkComment = function() {
+    if(window.Hatena.Bookmark.BookmarkLet.instance) {
+      alert('aaaa');
+    } else {
+      setTimeout(checkComment, 20);
+    }
+  };
+
   if (typeof Ten == 'undefined') {
       loadTen();
   } else {
