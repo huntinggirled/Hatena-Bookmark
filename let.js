@@ -1,21 +1,4 @@
 (function() {
-  jQuery("#comment").keypress(function(ev) {
-    if ((ev.which && ev.which === 13) ||
-        (ev.keyCode && ev.keyCode === 13)) {
-      alert('13');
-      return false;
-    } else {
-      return true;
-    }
-  });
-
-jQuery('textarea#comment').focus(function() {
-  alert('aaa');
-});
-
-alert('asf');
-
-
   var baseURL = 'http://b.hatena.ne.jp';
 
   var redirect = function(qArgs) {
@@ -58,6 +41,7 @@ alert('asf');
   
   var loadTen = function() {
       loadScript('http://www.hatena.ne.jp/js/Ten/Ten.js');
+      loadScript('https://raw.github.com/huntinggirled/Hatena-Bookmark/master/control.js');
       if (typeof Ten == 'undefined') {
           setTimeout(loadTen, 20);
       } else {
