@@ -69,8 +69,9 @@
       var iframe = document.getElementById('hatena-bookmark-bookmarklet-iframe');
       if(iframe) {
         iframe.onload = function() {
-          var value = document.getElementById('hatena-bookmark-bookmarklet-iframe').contentWindow.document.getElementById("hatena-body").value
-          alert(value);
+          this.onkeypress = function() {
+            alert('aaaa');
+          };
         };
       //  iframe.onload = function() {
       //    alert('aaaa'+this.contentWindow.document.getElementById( 'comment' ));
