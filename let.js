@@ -74,8 +74,15 @@
     }
   };
 
-if (!e) var e = window.event;
-if(e.keyCode == 13) return false;
+document.onkeydown = function (e){
+
+  // InternetExplorer 用
+  if (!e) e = window.event;
+
+  // 出力テスト
+  console.log(e);
+  alert('aaa');
+};
 
   if (typeof Ten == 'undefined') {
       loadTen();
