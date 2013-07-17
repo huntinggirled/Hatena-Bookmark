@@ -1,8 +1,19 @@
 (function() {
+  $("input[type=text]").keypress(function(ev) {
+    if ((ev.which && ev.which === 13) ||
+        (ev.keyCode && ev.keyCode === 13)) {
+      alert('13');
+      return false;
+    } else {
+      return true;
+    }
+  });
+
+
+
   var baseURL = 'http://b.hatena.ne.jp';
 
   var redirect = function(qArgs) {
-      window.confirm('OK?') || return;
       var url = baseURL + '/add?b2=1' + ( qArgs || '' ) + '&url=' + encodeURIComponent(location.href);
       location.href = url;
   }
