@@ -9,6 +9,9 @@
     }
   });
 
+jQuery("#comment").focus(function() {
+  alert('aaa');
+});
 
 
   var baseURL = 'http://b.hatena.ne.jp';
