@@ -66,6 +66,11 @@
   };
 
   var checkComment = function() {
+    var iframe = document.getElementById( 'iframe' );
+    iframe.onload = function()
+    {
+              alert( '完了' );
+    }
     var contentDocument = IFrame.contentDocument || IFrame.contentWindow.document;
     if (contentDocument) {
       alert(contentDocument);
