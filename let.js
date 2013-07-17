@@ -66,6 +66,7 @@
   };
   
   var checkComment = function() {
+    alert('aaa');
     if (document.getElementById('comment')) {
       alert(document.getElementById('comment'));
     } else {
