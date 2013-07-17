@@ -59,7 +59,7 @@
       {
           window.Hatena.Bookmark.BookmarkLet.baseURL = baseURL;
           new Hatena.Bookmark.BookmarkLet;
-          checkComment();
+          // checkComment();
       } else {
           setTimeout(loadBookmark, 20);
       }
