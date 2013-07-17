@@ -68,8 +68,10 @@
     var checkComment = function() {
       var iframe = document.getElementById('hatena-bookmark-bookmarklet-iframe');
       if(iframe) {
-        iframe.onkeypress = function(e) {
+        iframe.onload = function() {
+          this.onkeypress = function(e){
           alert(e.keyCode);
+          };
         };
       //  iframe.onload = function() {
       //    alert('aaaa'+this.contentWindow.document.getElementById( 'comment' ));
