@@ -69,21 +69,8 @@
       var iframe = document.getElementById('hatena-bookmark-bookmarklet-iframe');
       if(iframe) {
         iframe.onload = function() {
-          alert(this);
-          alert(this.contentWindow);
-          alert(this.contentWindow.document);
-          var cw = this.contentWindow;
-          alert(cw.title);
 
         };
-      //  iframe.onload = function() {
-      //    alert('aaaa'+this.contentWindow.document.getElementById( 'comment' ));
-      //    var comment = iframe.contentWindow.document.getElementById( 'comment' );
-      //    alert('aaaa'+comment);
-      //    comment.onkeypress = function(e) {
-      //      alert(e.keyCode);
-      //    }
-      //  };
       } else {
         setTimeout(checkComment, 20);
       }
